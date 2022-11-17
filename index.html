@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-compatible" content="IE-edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room Reservation</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/gallery-grid.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="jquery.datetimepicker.min.css" />
+
+</head>
+
+
+
+
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container">
+ <a class="navbar-brand" href="#"><img src="images/Robin Room black 2.png" width="180px" height="70px;" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html"><i class="fas fa-home pr-1"></i>Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="room.html"><i class="fas fa-person-booth pr-1"></i>Rooms</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="page.html"><i class="far fa-file pr-1"></i>Pages</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html"><i class="fas fa-phone-volume pr-1"></i>Contact</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="blog.html"><i class="fas fa-blog pr-1"></i>Blog</a>
+      </li>
+     </ul>
+    
+  </div>
+  </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="banner"></div>
+	  <div class="carousel-caption" >
+	  <h2 class="animated bounceInRight" style="animation-delay:1s">WELCOME PLACE TO <span>ROBIN ROOM</span></h2>
+	  <h3 class="animated bounceInLeft" style="animation-delay:2s">Lorem ipsum dolor sit amet, conconsectetuer </h3>
+	  <p class="animated bounceInRight" style="animation-delay:3s"><a href="#">CONTACT US</a></p>
+	  </div>
+    </div>
+	
+    <div class="carousel-item">
+       <div class="banner-two"></div>
+	   <div class="carousel-caption">
+	  <h2 class="animated slideInDown" style="animation-delay:1s">WELCOME PLACE  <span>FOR RELAX</span></h2>
+	  <h3 class="animated fadeInUp" style="animation-delay:2s">Lorem ipsum dolor sit amet, conconsectetuer</h3>
+	  <p class="animated zoomIn" style="animation-delay:3s"><a href="#">CONTACT US</a></p>
+	  </div>
+    </div>
+	
+    <div class="carousel-item">
+       <div class="banner-three"></div>
+	   <div class="carousel-caption">
+	  <h2 class="animated zoomIn" style="animation-delay:1s">WELCOME PLACE TO <span>FIND ROOM</span></h2>
+	  <h3 class="animated fadeInLeft" style="animation-delay:2s">Lorem ipsum dolor sit amet, conconsectetuer</h3>
+	  <p class="animated zoomIn" style="animation-delay:3s"><a href="#">CONTACT US</a></p>
+	  </div>
+    </div>
+  </div>
+ 
+</div>
+</header>
+
+
+ <div class="container-fluid check">
+ <div class="container border" data-aos="fade-down" data-aos-offset="300"  data-aos-easing="linear">
+         <div class="main-titletwo">
+		 <br />
+             <img src="images/Icon square green.png" width="40px" height="40px;" /><h1 style="color:black">Search Your Room</h1>
+            
+        </div>
+              <div class="row ">
+			  
+			  <div class="col-md-4 box">
+			  <input type="text" id="checkin" placeholder="CheckIn"  />
+			   </div>
+			  <div class="col-md-4 box">
+			  <input type="text" id="checkout" placeholder="CheckOut" />
+			  </div>
+			  <div class="col-md-4 box">
+			  
+                                    <select class="cora" name="room">
+                                        <option>Room</option>
+                                        <option>Single Room</option>
+                                        <option>Double Room</option>
+                                        <option>Deluxe Room</option>
+                                    </select>
+                </div>                
+			  
+			  </div><!--end of row one!-->
+			  
+			  
+			  <div class="row">
+			  
+			  <div class="col-md-4 box">
+			  
+                                    <select class="cora" name="room">
+                                        <option>Adult</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+										<option>4</option>
+										<option>5</option>
+                                    </select>
+                </div>                
+				<div class="col-md-4 box">
+			  
+                                    <select class="cora" name="room">
+                                        <option>Child</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+										<option>4</option>
+										<option>5</option>
+                                    </select>
+                </div>                
+				
+				<div class="col-md-4 box" >
+			  
+                                    
+                                    <a href="#" class="btn btn-outline3 btn-md">View Details</a>
+                                
+                </div>                
+			  </div><!--end of row two!-->
+			  
+			 
+                                
+			  
+			   
+     
+	</div><!--container!-->				
+ </div><!--container fluid!-->
+
+
+<div class="hotel-alpha content-area-12" style="background-color:white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="text" data-aos="fade-up-right">
+                    <table  align="center">
+					<tr>
+					<td><marquee direction = "right" onmouseover="this.stop();"onmouseout="this.start();"><img src="images/Robin Room green 2.png" width="120px;" height="50px" /></marquee></td>
+					</tr>
+					</table>
+                    <h1 data-aos="fade-right">Welcome To Robin Room</h1>
+                    <p>Duis vel nisl lacinia, facilisis in, consectetur leon vestibulum et ullamcorper tortor leon placerat mauris tincidunt ut non velit faucibus nam a
+                        pretium sapien nunc quis congue purus nunc feugiat nec purus a ultricies suspendisse in fringilla est sodales dui, non mattis tortor volutpat vitae.</p>
+                    <br>
+                    <a href="#" class="btn btn-outline2 btn-md">View Details</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 zoomimage" data-aos="fade-up-left">
+                <img src="images/b.jpg" alt="a" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+ 
+
+        <div class="container">
+		   <div class="main-title" data-aos="zoom-in">
+                <img src="images/Icon square green.png" width="40px" height="40px;" /><h1>OUR FACILTIES</h1>
+                <p>Check out our hotel facilties</p>
+            </div><!--end main title!-->
+			<br /><br />
+			
+			<div class="row">
+			<div class="col-md-4">
+		       <div class="services-box-2 media">
+			   <div class="media-left">
+			   <i class="fas fa-user-edit"></i>
+			   <h3>24-hour Reception</h3>
+			   <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+			   </div>
+			   </div>
+			</div>
+			
+			<div class="col-md-4">
+			<div class="services-box-2 media">
+			   <div class="media-left">
+			   <i class="fas fa-people-carry"></i>
+			   <h3>Room Service</h3>
+			   <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+			   </div>
+			   </div>
+			</div>
+			
+			<div class="col-md-4">
+			<div class="services-box-2 media">
+			   <div class="media-left">
+			   <i class="fas fa-tv"></i>
+			   <h3>Flat Screen TV</h3>
+			   <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+			   </div>
+			   </div>
+			</div>
+			</div><!--end of row!-->
+			
+			
+			
+			
+			
+			<div class="row">
+			<div class="col-md-4">
+		       <div class="services-box-2 media">
+			   <div class="media-left">
+			   <i class="fa fa-car"></i>
+			   <h3>Free Parking</h3>
+			   <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+			   </div>
+			   </div>
+			</div>
+			
+			<div class="col-md-4">
+			<div class="services-box-2 media">
+			   <div class="media-left">
+			   <i class="fas fa-dumbbell"></i>
+			   <h3>Gym</h3>
+			   <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+			   </div>
+			   </div>
+			</div>
+			
+			<div class="col-md-4">
+			<div class="services-box-2 media">
+			   <div class="media-left">
+			   <i class="fas fa-wifi"></i>
+			   <h3>Free Wifi</h3>
+			   <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+			   </div>
+			   </div>
+			</div>
+			</div><!--end of row!-->
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+<div class="container">
+		   <div class="main-title" data-aos="zoom-in">
+               <img src="images/Icon square green.png" width="40px" height="40px;" /> <h1>Features of our specific rooms</h1>
+                <p>These best rooms chosen by our customers</p>
+            </div><!--end main title!-->
+			
+			
+			 <div class="row" style="margin-top:100px;">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-2" data-aos="zoom-in">
+                    <div class="blog-photo">
+                        <img src="images/img-1.jpg" alt="img-2" class="img-responsive">
+                        
+                    </div>
+                    <div class="detail">
+                        
+                        <h3>
+                            <a href="blog-details.html">Economy Room</a>
+                        </h3>
+						<p>We have economy rooms available for solo travelers or those wishing to have their own privacy. These are comfortable with a smaller double bed and have their own en suites. All have plenty of light and windows and are nicely furnished.</p>
+                      <h6>Max: 2 Person(s)</h6>
+                         <h6> Bed: Double</h6>
+                         <h6> View: City</h6>
+						 <h3>Room Facilities</h3>
+						 <ul>
+						<li> Free Wifi</li>
+                         <li>Air-conditioned</li>
+                          <li>Armcahir</li>
+                           <li>Cable Tv</li>
+                           <li>Direct Deal Phone</li>
+                           <li>Central Heating</li>
+                            <li>Wooden Floor</li>
+                             <li>Fire Alarm</li>
+
+						 </ul>
+						 
+                        <a href="blog-details.html" class="read-more-btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 hidden-sm">
+                <div class="blog-2" data-aos="zoom-in">
+                    <div class="blog-photo">
+                        <img src="images/img-2.jpg" alt="img-6" class="img-responsive">
+                        
+                    </div>
+                    <div class="detail">
+                       
+                        <h3>
+                            <a href="blog-details.html">Standard Room</a>
+                        </h3>
+						<p>Standard rooms have a standard double bed and en suite. Twin rooms have 2 separate beds and are very comfortable. The rooms have nice new bathrooms.All rooms have a minimum of 2 opening windows some rooms as many as 5 windows. </p>
+						<h6>Max: 2 Person(s)</h6>
+                         <h6> Bed: Double</h6>
+                         <h6> View: City</h6>
+						 <h3>Room Facilities</h3>
+						 <ul>
+						<li> Free Wifi</li>
+                         <li>Air-conditioned</li>
+                          <li>Armcahir</li>
+                           <li>Cable Tv</li>
+                           <li>Direct Deal Phone</li>
+                           <li>Central Heating</li>
+                            <li>Wooden Floor</li>
+                             <li>Fire Alarm</li>
+
+						 </ul>
+						
+                        <a href="blog-details.html" class="read-more-btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-2" data-aos="zoom-in">
+                    <div class="blog-photo">
+                        <img src="images/img-3.jpg" alt="img-3" class="img-responsive">
+                        
+                    </div>
+                    <div class="detail">
+                        
+                        <h3>
+                            <a href="blog-details.html">Family Room</a>
+                        </h3>
+						<p>Our Family suites have a separate entry sitting room opening to a bedroom with queen size bed and a divan. The family suite has a large shower room. It is ideal for people who want a large room . Also for people with children it is ideal. It can sleep up to 4 persons so is great for a family.</p>
+                        <h6>Max: 4 Person(s)</h6>
+                         <h6> Quen-size , Single and Sofa beds</h6>
+                         <h6> View: City</h6>
+						 <h3>Room Facilities</h3>
+						 <ul>
+						<li> Free Wifi</li>
+                         <li>Air-conditioned</li>
+                          <li>Armcahir</li>
+                           <li>Cable Tv</li>
+                           <li>Direct Deal Phone</li>
+                           <li>Central Heating</li>
+                            <li>Wooden Floor</li>
+                             <li>Fire Alarm</li>
+
+						 </ul>
+						 
+                        <a href="blog-details.html" class="read-more-btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+	
+	<div class="row" style="margin-top:100px;">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-2" data-aos="zoom-in">
+                    <div class="blog-photo">
+                        <img src="images/img-2.jpg" alt="img-2" class="img-responsive">
+                        
+                    </div>
+                    <div class="detail">
+                        
+                        <h3>
+                            <a href="blog-details.html">Tripple Room</a>
+                        </h3>
+						<p>Double rooms have a standard double bed and en suite. Twin rooms have 2 separate beds . The rooms have nice new bathrooms.All rooms have a minimum of 2 opening windows some rooms as many as 5 windows.</p>
+                        <h6>Max: 3 Person(s)</h6>
+                         <h6> Bed: King-size and One Single beds</h6>
+                         <h6> View: City</h6>
+						 <h3>Room Facilities</h3>
+						 <ul>
+						<li> Free Wifi</li>
+                         <li>Air-conditioned</li>
+                          <li>Armcahir</li>
+                           <li>Cable Tv</li>
+                           <li>Direct Deal Phone</li>
+                           <li>Central Heating</li>
+                            <li>Wooden Floor</li>
+                             <li>Fire Alarm</li>
+
+						 </ul>
+						
+                        <a href="blog-details.html" class="read-more-btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 hidden-sm">
+                <div class="blog-2" data-aos="zoom-in">
+                    <div class="blog-photo">
+                        <img src="images/img-6.jpg" alt="img-6" class="img-responsive">
+                        
+                    </div>
+                    <div class="detail">
+                       
+                        <h3>
+                            <a href="blog-details.html">Suit Room</a>
+                        </h3>
+						<p>Suite Room is located on the top floor of the building, with large room, large bath room, jakuzzi bathtub, large balcony and Marmara sea view , It is convenient fr the luxury stay in our Hotel. It is suitable from 3 people upto 5 People</p>
+                        <h6>Max: 2 Person(s)</h6>
+                         <h6> Bed: Double</h6>
+                         <h6> View: City</h6>
+						 <h3>Room Facilities</h3>
+						 <ul>
+						<li> Free Wifi</li>
+                         <li>Air-conditioned</li>
+                          <li>Armcahir</li>
+                           <li>Cable Tv</li>
+                           <li>Direct Deal Phone</li>
+                           <li>Central Heating</li>
+                            <li>Wooden Floor</li>
+                             <li>Fire Alarm</li>
+
+						 </ul>
+				
+                        <a href="blog-details.html" class="read-more-btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-2" data-aos="zoom-in">
+                    <div class="blog-photo">
+                        <img src="images/img-3.jpg" alt="img-3" class="img-responsive">
+                        
+                    </div>
+                    <div class="detail">
+                        
+                        <h3>
+                            <a href="blog-details.html">Personal Room</a>
+                        </h3>
+						<p>We have economy rooms available for solo travelers or those wishing to have their own privacy. These are comfortable with a smaller double bed and have their own en suites.  As a single person you will be very comfortable!.</p>
+                        <h6>Max: 2 Person(s)</h6>
+                         <h6> Bed: Double</h6>
+                         <h6> View: City</h6>
+						 <h3>Room Facilities</h3>
+						 <ul>
+						<li> Free Wifi</li>
+                         <li>Air-conditioned</li>
+                          <li>Armcahir</li>
+                           <li>Cable Tv</li>
+                           <li>Direct Deal Phone</li>
+                           <li>Central Heating</li>
+                            <li>Wooden Floor</li>
+                             <li>Fire Alarm</li>
+
+						 </ul>
+				
+                        <a href="blog-details.html" class="read-more-btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	   
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			
+			
+			<!--reservation form!-->
+			 
+	<div class="container fofo" data-aos="fade-down" data-aos-offset="300"  data-aos-easing="linear">
+         <div class="main-titletwo">
+		 <br />
+             <img src="images/Icon square green.png" width="40px" height="40px;" /><h1 style="color:black">Online Booking Form</h1>
+            
+        </div>
+	
+			<div class="row ">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3">
+			<h6>First Name</h6>
+			</div>
+			<div class="col-md-3 box">
+			<input type="text" />
+			</div>
+			<div class="col-md-3">
+			</div>
+			
+			
+			</div>
+			
+			
+			
+			<div class="row">
+			<div class="col-md-3" >
+			</div>
+			<div class="col-md-3">
+			<h6>Last Name</h6>
+			</div>
+			<div class="col-md-3 box">
+			<input type="text" />
+			</div>
+			<div class="col-md-3" >
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3">
+			<h6>Contact</h6>
+			</div>
+			<div class="col-md-3 box">
+			<input type="text" />
+			</div>
+			<div class="col-md-3">
+			</div>
+			
+			
+			</div>
+			
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3" >
+			<h6>Email</h6>
+			</div>
+			<div class="col-md-3 box" >
+			<input type="text" />
+			</div>
+			<div class="col-md-3" >
+			</div>
+			</div>
+			
+			
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3" >
+			<h6>Arival Date</h6>
+			</div>
+			<div class="col-md-3 box" >
+			<input type="text" id="arival" placeholder="CheckIn"  />
+			
+			</div>
+			<div class="col-md-3">
+			</div>
+			
+			
+			</div>
+			
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3 ">
+			<h6>Depature date</h6>
+			</div>
+			<div class="col-md-3 box">
+			<input type="text" id="leave" placeholder="CheckOut"  />
+			</div>
+			<div class="col-md-3">
+			</div>
+			</div>
+			
+			
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3 ">
+			<h6>Select room</h6>
+			</div>
+			<div class="col-md-3 box">
+			<select class="cora" name="room">
+                                        <option>Room</option>
+                                        <option>Economy Room</option>
+                                        <option>Standard Room</option>
+                                        <option>Family Room</option>
+										<option>Tripple Room</option>
+                                        <option>Suit Room</option>
+                                        <option>Personal Room</option>
+                                    </select>
+			</div>
+			<div class="col-md-3">
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3 ">
+			<a href="#" class="btn btn-outline3 btn-md">Submit </a>
+			</div>
+			<div class="col-md-3 box">
+			
+			</div>
+			<div class="col-md-3">
+			</div>
+			</div>
+			
+			
+			
+			
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+<div class="container">
+        <!-- Main title -->
+        <div class="main-title" data-aos="zoom-in">
+             <img src="images/Icon square green.png" width="40px" height="40px;" /><h1>Our Gallery</h1>
+            <p>Check out our hotel photo gallery</p>
+        </div>
+		</div>
+               
+			  
+			<div class="container">
+     
+ 
+ 
+<div class="container gallery-container"data-aos="zoom-in">
+  
+    
+      
+    <div class="tz-gallery">
+  
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/img-1.jpg">
+                    <img src="images/img-1.jpg" alt="img-1" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/img-2.jpg">
+                    <img src="images/img-2.jpg" alt="img-2" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/img-3.jpg">
+                    <img src="images/img-3.jpg" alt="img-3" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+        </div>
+          <div class="row"> 
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/img-4.jpg">
+                    <img src="images/img-4.jpg" alt="img-4" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/img-5.jpg">
+                    <img src="images/img-5.jpg" alt="img-5" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+             
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="images/img-6.jpg">
+                    <img src="images/img-6.jpg" alt="img-6" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+         
+        </div>
+  
+    </div>
+  
+</div>
+ 
+</div>
+
+
+	   
+	   <footer class="main-footer clearfix">
+    <div class="container">
+        <!-- Footer info-->
+        <div class="footer-info">
+            <div class="row">
+                <!-- About us -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="images/Robin Room green 2.png" alt="white-logo">
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, conser adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a conser nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam.</p>
+                    </div>
+                </div>
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-item">
+                        <div class="main-title-2">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <ul class="personal-info">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                Address: 44 New Design Street,
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                Email:<a href="mailto:sales@hotelempire.com" style="color:white">info@themevessel.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                Phone: <a href="tel:+55-417-634-7071" style="color:white">+0477 85X6 552</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-fax"></i>
+                                Fax: +0477 85X6 552
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                       
+                    </div>
+                </div>
+                <!-- Gallery -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-item gallery">
+                        <div class="main-title-2">
+                            <h1>Gallery</h1>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="gallery-3column.html">
+                                    <img src="images/small-img-2.jpg" alt="small-img-2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery-3column.html">
+                                    <img src="images/small-img-4.jpg" alt="small-img-4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery-3column.html">
+                                    <img src="images/small-img-6.jpg" alt="small-img-5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery-3column.html">
+                                    <img src="images/small-img-3.jpg" alt="small-img-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery-3column.html">
+                                    <img src="images/small-img-6.jpg" alt="small-img-6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery-3column.html">
+                                    <img src="images/small-img.jpg" alt="small-img">
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-item newsletter">
+                        <div class="main-title-2">
+                            <h1>Newsletter</h1>
+                        </div>
+                        <div class="newsletter-inner">
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <form action="#" method="GET">
+                                <p><input type="text" class="form-contact" name="email" placeholder="Enter your email"></p>
+                                <p><button type="submit" name="submitNewsletter" class="btn btn-small">
+                                    Signup
+                                </button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	   
+	   <div class="copy-right">
+    <div class="container">
+        �  2017 <a href="http://themevessel.com/" target="_blank">Theme Vessel</a>. Trademarks and brands are the property of their respective owners.
+    </div>
+</div>
+			
+	   
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script src="jquery.datetimepicker.full.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+<script>
+$("#checkin").datetimepicker();
+$("#checkout").datetimepicker();
+$("#arival").datetimepicker();
+$("#leave").datetimepicker();
+</script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+  
+  <script>
+  AOS.init();
+</script>
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>
